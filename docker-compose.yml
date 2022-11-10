@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    image: nginx:latest
+    container_name: logs_nginx
+    depends_on:
+      - php
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - logs-package
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: logs_php
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - logs-package
+
+networks:
+  logs-package:
+    name: logs-package

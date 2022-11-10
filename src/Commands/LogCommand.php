@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Girishl\Log\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'log';
 
     public $description = 'My command';
 
