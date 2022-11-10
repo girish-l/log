@@ -4,7 +4,6 @@ namespace Girishl\Log;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Girishl\Log\Commands\LogCommand;
 
 class LogServiceProvider extends PackageServiceProvider
 {

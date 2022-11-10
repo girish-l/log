@@ -2,9 +2,9 @@
 
 namespace Girishl\Log\Tests;
 
+use Girishl\Log\LogServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Girishl\Log\LogServiceProvider;
 
 class TestCase extends Orchestra
 {
